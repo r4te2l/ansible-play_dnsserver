@@ -1,0 +1,6 @@
+---
+- name: pdns-ansible
+  src: https://github.com/PowerDNS/pdns-ansible.git
+  version: master
+  scm: git
+- src: geerlingguy.postgresql

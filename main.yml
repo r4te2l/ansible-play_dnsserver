@@ -1,0 +1,5 @@
+---
+- name: powerdns
+  hosts: powerdns_authoritative
+  roles:
+    - role: pdns-ansible
