@@ -3,3 +3,9 @@
   src: https://github.com/PowerDNS/pdns-ansible.git
   version: master
   scm: git
+- name: powerdns-admin
+  src: https://github.com/r4te2l/ansible-role_powerdns-admin.git
+  version: master
+  scm: git
+- src: geerlingguy.mysql
+- src: geerlingguy.nginx

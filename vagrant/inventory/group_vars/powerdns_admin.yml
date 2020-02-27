@@ -1,0 +1,3 @@
+---
+pdnsadmin_server_name: 192.168.53.53
+pdnsadmin_bind_addr: 192.168.53.53

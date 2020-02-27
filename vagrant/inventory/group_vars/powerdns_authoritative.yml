@@ -12,3 +12,9 @@ pdns_backends:
     user: powerdns
     password: cmwN3skuTRAZr5Z8gwwjUwt725pfZshz
     dbname: pdns
+pdns_mysql_databases_credentials:
+  gmysql:
+    priv_user: "{{ mysql_root_username }}"
+    priv_password: "{{ mysql_root_password }}"
+    priv_host:
+      - "127.0.0.1"

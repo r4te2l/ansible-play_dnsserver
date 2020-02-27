@@ -1,5 +1,27 @@
 ---
+- name: database
+  hosts:
+    - powerdns_db
+  roles:
+    - role: geerlingguy.mysql
+      become: true
+
 - name: powerdns
-  hosts: powerdns_authoritative
+  hosts:
+    - powerdns_authoritative
   roles:
     - role: pdns-ansible
+
+- name: nginx
+  hosts: powerdns_admin
+  gather_facts: true
+  roles:
+    - role: geerlingguy.nginx
+      become: true
+
+- name: powerdns_admin
+  hosts: powerdns_admin
+  gather_facts: true
+  roles:
+    - role: powerdns-admin
+      become: true
